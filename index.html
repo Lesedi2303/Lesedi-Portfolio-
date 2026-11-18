@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesedi Sekamotho | Portfolio</title>
+<meta name="description" content="Lesedi Sekamotho, first-year Diploma in ICT (Application Development) student at Walter Sisulu University. Notes, goals and a first website.">
+<meta name="theme-color" content="#14504f">
+<style>
+  :root{
+    --ink:#1d2625;
+    --muted:#5d6b69;
+    --bg:#f7f5f0;
+    --card:#ffffff;
+    --teal:#14504f;
+    --teal-soft:#e3eeec;
+    --accent:#d9893b;
+    --line:#e2ded4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:Georgia,"Times New Roman",serif;
+    background:var(--bg);color:var(--ink);
+    line-height:1.7;font-size:17px;
+  }
+  h1,h2,h3,nav,.tag,button,.btn{font-family:"Segoe UI",Helvetica,Arial,sans-serif}
+  a{color:var(--teal)}
+  header{
+    position:sticky;top:0;background:rgba(247,245,240,.94);
+    backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:10;
+  }
+  nav{
+    max-width:860px;margin:0 auto;padding:14px 20px;
+    display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
+  }
+  nav .logo{font-weight:700;color:var(--teal);text-decoration:none;font-size:1.05rem}
+  nav ul{list-style:none;display:flex;gap:18px;font-size:.92rem}
+  nav ul a{text-decoration:none;color:var(--muted)}
+  nav ul a:hover{color:var(--teal)}
+  main{max-width:860px;margin:0 auto;padding:0 20px}
+  section{padding:56px 0 8px}
+  .hero{display:flex;gap:32px;align-items:center;padding-top:64px;flex-wrap:wrap}
+  .photo{
+    width:160px;height:160px;border-radius:50%;flex-shrink:0;
+    background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;
+    font:700 2.6rem "Segoe UI",Arial,sans-serif;overflow:hidden;border:4px solid var(--card);
+    box-shadow:0 0 0 2px var(--accent);
+  }
+  .photo img{width:100%;height:100%;object-fit:cover}
+  .hero h1{font-size:2.3rem;line-height:1.15;color:var(--teal);margin-bottom:6px}
+  .hero p.sub{color:var(--muted);margin-bottom:16px}
+  .btn{
+    display:inline-block;padding:10px 20px;border-radius:6px;text-decoration:none;
+    font-size:.95rem;font-weight:600;margin:0 8px 8px 0;
+  }
+  .btn.primary{background:var(--teal);color:#fff}
+  .btn.ghost{border:1.5px solid var(--teal);color:var(--teal)}
+  h2{font-size:1.4rem;color:var(--teal);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+  h2::after{content:"";flex:1;height:1px;background:var(--line)}
+  p+p{margin-top:12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px}
+  .card h3{font-size:1.02rem;margin-bottom:6px;color:var(--ink)}
+  .card p{font-size:.95rem;color:var(--muted)}
+  .tag{
+    display:inline-block;background:var(--teal-soft);color:var(--teal);
+    padding:4px 12px;border-radius:99px;font-size:.85rem;margin:0 6px 8px 0;
+  }
+  .note{border-left:3px solid var(--accent);padding-left:16px;color:var(--muted);margin-top:14px}
+  footer{max-width:860px;margin:64px auto 0;padding:24px 20px 40px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.9rem}
+  @media(max-width:560px){
+    .hero{padding-top:36px}
+    .hero h1{font-size:1.8rem}
+    nav ul{gap:12px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="#top">Lesedi Sekamotho</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#learning">Learning</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <!-- To add your photo: save it in the same folder as this file as photo.jpg,
+         then replace the "LS" text below with: <img src="photo.jpg" alt="Lesedi Sekamotho"> -->
+    <div class="photo"><img src="photo.jpg" alt="Lesedi Sekamotho"></div>
+    <div>
+      <h1>Hi, I'm Lesedi.</h1>
+      <p class="sub">First-year Diploma in ICT (Application Development) student at Walter Sisulu University</p>
+      <a class="btn primary" href="#contact">Get in touch</a>
+      <a class="btn ghost" href="https://github.com/Lesedi2303" target="_blank" rel="noopener">My GitHub</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>I'm Lesedi Kgololo Sekamotho, and I'm a first-year student at Walter Sisulu University, doing a Diploma in ICT in Application Development (main stream). I'm still near the start of the journey, so I won't pretend to be an expert. What I do have is curiosity, and a habit of trying things until they work.</p>
+    <p>I want to build software that people actually use, whether that's an app that makes someone's day a little easier or a system that quietly does its job in the background. Right now I'm learning the foundations that everything else sits on.</p>
+  </section>
+
+  <section id="learning">
+    <h2>What I'm learning</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Programming basics</h3>
+        <p>Thinking in steps, using conditions and loops, and breaking a problem into pieces small enough to solve.</p>
+      </div>
+      <div class="card">
+        <h3>How computers work</h3>
+        <p>Understanding hardware, software and networks, so the code I write makes sense in the bigger picture.</p>
+      </div>
+      <div class="card">
+        <h3>Building for the web</h3>
+        <p>Teaching myself HTML and CSS by making things, getting them wrong, and fixing them.</p>
+      </div>
+    </div>
+    <div style="margin-top:18px">
+      <span class="tag">Application Development</span>
+      <span class="tag">Problem solving</span>
+      <span class="tag">HTML &amp; CSS</span>
+      <span class="tag">Git &amp; GitHub</span>
+    </div>
+  </section>
+
+  <section id="project">
+    <h2>My first website</h2>
+    <p>This site is my first real attempt at building something about myself. I wanted a proper place that shows who I am and where I'm headed, instead of leaving it all in a CV that nobody reads past the first line.</p>
+    <p>It's simple on purpose. I'd rather have a small page I understand completely than a flashy one I copied. As I learn more, I'll keep coming back to improve it.</p>
+    <p class="note">You'll find the code and anything else I build on my GitHub as I go.</p>
+  </section>
+
+  <section id="goals">
+    <h2>Where I'm heading</h2>
+    <p>Over the next few years I want to get comfortable writing clean code, finish my diploma strongly, and put together projects I'm proud to show. After that, I'd like to work as a developer and keep learning on the job.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Let's connect</h2>
+    <p>If you'd like to say hello, share advice, or talk about a project, I'd love to hear from you.</p>
+    <p style="margin-top:16px">
+      <a class="btn primary" href="mailto:lesedi.k.sekamotho@gmail.com">lesedi.k.sekamotho@gmail.com</a>
+      <a class="btn ghost" href="https://github.com/Lesedi2303" target="_blank" rel="noopener">github.com/Lesedi2303</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 Lesedi Kgololo Sekamotho &middot; Walter Sisulu University
+</footer>
+
+</body>
+</html>
